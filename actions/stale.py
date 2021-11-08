@@ -15,7 +15,7 @@ async def stale(message, thresholdDays):
         exempt = ['admin','archive']
         if channel.category.name in exempt:
           continue
-        if 'SERVER STATS' in channel.category.name:
+        if 'SERVER' in channel.category.name:
           continue
 
         curmessage = await channel.fetch_message(last)
