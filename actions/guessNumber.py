@@ -2,9 +2,9 @@ import random
 
 async def guessNumber(client, message):
   channel = message.channel
-  await channel.send("Guess the number from 0-5 by writing number in this channel!")
+  await channel.send("Guess the number from 0-10 by writing number in this channel!")
 
-  number1 = str(random.randint(1,5))
+  number1 = str(random.randint(1,10))
 
   def check(m):
       return m.content == number1 and m.channel == channel
